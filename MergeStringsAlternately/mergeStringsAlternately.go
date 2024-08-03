@@ -1,10 +1,3 @@
-package main
-
-import (
-	"fmt"
-	"strings"
-)
-
 func mergeAlternately(w1 string, w2 string) string {
 	res := ""
 	max_len := max(len(w1), len(w2))
@@ -20,21 +13,4 @@ func mergeAlternately(w1 string, w2 string) string {
 		}
 	}
 	return res
-	// }
-}
-func main() {
-	w1 := "abc"
-	w2 := "pqr"
-
-	result := mergeAlternately(w1, w2)
-	w1 = "abcdef"
-	w2 = "pqr"
-
-	result = mergeAlternately(w1, w2)
-	w1 = "abc"
-	w2 = "pqrstu"
-
-	result = mergeAlternately(w1, w2)
-	fmt.Println(result)
-
 }
